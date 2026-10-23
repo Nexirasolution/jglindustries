@@ -70,3 +70,13 @@ nav a{position:relative;padding:6px 0}nav a::after{content:"";position:absolute;
 }
 @keyframes drop{from{opacity:0;transform:translateY(-8px)}}
 @media(prefers-reduced-motion:reduce){.h-in,.reveal{animation:none;transition:none;opacity:1;transform:none}.floaters i{animation:none}}
+
+.specs { list-style: none; padding: 0; margin: 0 0 8px; }
+.specs li { padding: 2px 0; }
+
+.clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
