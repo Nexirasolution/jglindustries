@@ -48,7 +48,7 @@ export default async function Home() {
         <img src="/logo.jpeg" alt="JGL Industries logo" className="herologo h-in d3" />
       </div></section>
 
-    <section className="stats"><div className="wrap statgrid"><div><b>1971</b><span>Serving since</span></div><div><b>3</b><span>Core materials</span></div><div><b>1 team</b><span>Supply to installation</span></div></div></section>
+    {/* <section className="stats"><div className="wrap statgrid"><div><b>1971</b><span>Serving since</span></div><div><b>3</b><span>Core materials</span></div><div><b>1 team</b><span>Supply to installation</span></div></div></section> */}
 
     <section className="sec"><div className="wrap"><Reveal><h2>What we supply</h2></Reveal>
       <div className="grid3">{items.map((c, i) => {
@@ -84,6 +84,6 @@ export default async function Home() {
       ))}</div>
         : <p>Projects will appear here once added from the admin page.</p>}</div></section>
 
-    <section className="cta"><div className="wrap"><Reveal><h2>Planning a floor, kitchen or facade?</h2><p>Tell us the space and we will suggest the right material.</p><Link className="btn light" href="/contact">Contact us</Link></Reveal></div></section>
+    <section className="cta"><div className="wrap"><Reveal><h2>Planning your flooring or outdoor space?</h2><p>Looking for quality interlocking pavers and tiles? We manufacture, supply and install quality products to suit your needs.</p><Link className="btn light" href="/contact">Contact us</Link></Reveal></div></section>
   </>);
 }

@@ -80,3 +80,49 @@ nav a{position:relative;padding:6px 0}nav a::after{content:"";position:absolute;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+.footcredit {
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.85rem;
+}
+.footcredit p { margin: 0; opacity: 0.8; }
+.footcredit a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+.footcredit a:hover { opacity: 0.7; }
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+/* faded background image */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('/interlock.jpeg') center / cover no-repeat;
+  opacity: 0.15;   /* raise to 0.25 for a stronger image, lower for subtler */
+  z-index: 0;
+}
+
+/* soft fade at the bottom so it blends into the next section */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.8));
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* keep hero content above the image */
+.hero .wrap {
+  position: relative;
+  z-index: 1;
+}
