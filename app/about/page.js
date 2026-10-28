@@ -7,5 +7,5 @@ export default function About() {
       {/* <div className="card"><h3>Since 1971</h3><p>Over five decades in the stone and tile trade.</p>
       </div> */}
       <div className="card"><h3>Wide range</h3><p>Domestic and imported stone and tile.</p></div>
-      <div className="card"><h3>Manufacture , Supply and install</h3><p>One team from selection to finishing.</p></div></div></div></section>);
+      <div className="card"><h3>Manufacture , Supply and install</h3><p>Three team from selection to finishing.</p></div></div></div></section>);
 }
